@@ -1,0 +1,9 @@
+ip,name,model,enabled
+10.67.242.10,CoreSw-K,OS6860,yes
+10.67.242.20,CoreSw-M,OS6860,yes
+10.67.242.30,CoreSw-L,OS6860,yes
+10.67.242.40,CoreSw-D0,OS6860,yes
+10.67.242.33,AggrSw-H,OS6450,yes
+10.67.243.10,AccSw-B01,OS6450,yes
+10.67.243.20,AccSw-B02,OS6450,yes
+10.67.243.30,AccSw-C01,OS6450,no

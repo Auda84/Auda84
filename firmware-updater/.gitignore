@@ -1,0 +1,22 @@
+# Fichiers sensibles — ne jamais committer
+config.ini
+*.log
+update.log
+
+# Firmware (fichiers lourds)
+firmware/
+*.img
+*.tar
+*.tgz
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db

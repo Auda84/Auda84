@@ -1,0 +1,39 @@
+# =============================================================================
+# config.ini — Configuration du script de mise à jour firmware OmniSwitch
+# =============================================================================
+# ⚠️  NE PAS committer ce fichier sur GitHub (il contient des mots de passe)
+#     Il est listé dans .gitignore automatiquement.
+# =============================================================================
+
+[credentials]
+# Identifiants SSH communs à tous les switches
+# (si certains switches ont des credentials différents, adapter le CSV)
+username = admin
+password = switch_password_ici
+
+[firmware]
+# Version cible à déployer (ex: AOS 6.7.2.R06 ou 8.9.1.R02)
+target_version = 6.7.2.R06
+
+# Chemin local vers le fichier firmware (.img)
+# Exemple : C:\firmware\Tos.img  ou  /opt/firmware/Tos.img
+local_file = firmware/Tos.img
+
+# Chemin de destination sur le switch (partition working)
+remote_path = /flash/working/
+
+# Temps d'attente max après reboot avant de déclarer timeout (secondes)
+reboot_wait_seconds = 300
+
+[git]
+# Chemin local du dépôt Git cloné sur ta machine
+repo_path = /chemin/vers/ton/repo/Auda84
+
+# URL HTTPS du dépôt GitHub
+repo_url = https://github.com/Auda84/Auda84.git
+
+# Personal Access Token GitHub (avec droits repo)
+token = TON_TOKEN_ICI
+
+# Sous-dossier dans le repo où stocker les rapports
+target_subdir = firmware-reports
